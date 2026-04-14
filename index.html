@@ -1,136 +1,191 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benedetta Catricalà - Front End Developer</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="JS.js"></script>
-  <link rel="icon" href="immagini/ninniColor.png" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-
-  <link href="https://fonts.googleapis.com/css?family=Montserrat " rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benedetta Catricalà – UX/UI Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="immagini/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="profile-picture">
-        <img src="immagini/ninniColor.png" alt="foto curriculum">
+  <!-- NAV -->
+  <header class="header">
+    <div class=" nav">
+      <div class="logo">BC</div>
+      <nav class="nav-menu">
+        <a href="#about">
+          <span data-it="Chi sono" data-en="About me">
+            Chi sono
+          </span>
+        </a>
+        <a href="#projects">
+          <span data-it="Progetti" data-en="Projects">
+            Progetti
+          </span>
+        </a>
+        <a href="#visual">
+          <span data-it="Visual & Brand Identity" data-en="Visual & Brand Identity">
+            Visual & Brand Identity
+          </span>
+        </a>
+        <a href="#contact">
+          <span data-it="Contatti" data-en="Contact">
+            Contatti
+          </span>
+        </a>
+        <div class="lang-switch">
+          <span class="lang active" data-lang="it">ITA</span>
+          <span class="lang" data-lang="en">ENG</span>
+        </div>
+      </nav>
     </div>
-    <div class="logo">Benedetta Catricalà</div>
-        <hr>
-    <nav>
-
-      <ul>
-        <li><a href="#about">Chi Sono</a></li>
-        <li><a href="#job">Esperienze e competenze</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contatti</a></li>
-      </ul>
-    </nav>
+    <button class="nav-toggle" aria-label="Apri menu">☰</button>
   </header>
 
-  <!-- Sezione Chi Sono -->
-  <section id="about">
-    <h2>Chi Sono</h2>
-    <p>Mi chiamo Benedetta, ho 27 anni e sono una front-end developer con una forte passione per il design e la creazione di esperienze digitali. 
-        Mi sono laureata con il massimo dei voti in <b>Informatica Umanistica – Grafica, Interattività e Ambienti Virtuali </b>presso l'Università di Pisa, un percorso che mi ha permesso di unire competenze tecniche e sensibilità creativa
-  
-    </p>
+  <section class="home">
+    <div class="title reveal">Benedetta Catricalà</div>
+
+    <div class="content">
+      <div class="text reveal reveal-left">
+        <h3>
+          UX/UI Designer · Frontend 
+        </h3>
+      </div>
+
+      <div class="image">
+        <img  src="immagini/signed.png" alt="Portfolio Image">
+      </div>
+
+      <div class="text reveal reveal-right">
+        <h3>
+           Human-Centered Design
+        </h3>
+      </div>
+    </div>
   </section>
 
-  <section id="job">
-    <h2>Esperienze e competenze</h2>
-    <p>
-        Mi piace creare soluzioni che uniscano funzionalità ed estetica, mettendo al centro l'utente. Sono una persona creativa e curiosa, sempre alla ricerca di nuove sfide per migliorarmi e imparare.<br>
-        &#8226;	<b>Sviluppo web completo:</b> ho progettato e sviluppato in autonomia due siti web, curando sia il front-end (HTML, CSS, JavaScript) sia il back-end (PHP, MySQL). In particolare, ho sviluppato interamente un'applicazione web che ha richiesto
-                 tutte le fasi dello sviluppo software, compresi i test per la valutazione dell'usabilità. 
-                 <br>
-        &#8226; <b>Serious games e robotica:</b> durante il mio assegno di ricerca al CNR di Pisa, ho lavorato allo sviluppo di serious games per tablet, integrando esperienze interattive con robot, esplorando il mondo dell'interazione uomo-macchina. Ne sono seguite
-        due sperimentazioni in collaborazione con l'istituto di Neuroscienze del CNR di Pisa. <br>
-        &#8226; <b>Design grafico:</b> Realizzo i miei progetti grafici utilizzando Adobe Illustrator per loghi e icone, e Photoshop per mockup e bozze, creando elementi visivi che arricchiscono le interfacce utente. Lavoro anche come freelancer per la creazione
-                  di illustrazioni personalizzate. Ogni progetto vede una fase di analisi e pianificazione, seguita dalla progettazione grafica in costante comunicazione con il cliente.
-      </p>
-      <br><br>
-               
-
-  </section>
-
-  <!-- Sezione Portfolio -->
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>GOSPEL CHOIR <br><i>Progetto per SoulMates, coro di musica gospel e spiritual</i></h3>
-        <br>
-
-        <img src="immagini/soulmates.png"  alt="Logo 1">
-
-        <img src="immagini/soulmatesTot.png"   alt="biglietto da visita" ><br>
-      </div>
-      <div class="project">
-        <h3>WEDDING BAND <br><i>Progetto per MoonDance, band per tutti i matrimoni</i></h3>
-        <br>
-        <img src="immagini/moondance.png" alt="Logo 2"> <br>
-        <img src="immagini/moon_pitto.png" alt="moondance colorato"> <br>
-      </div>
-      <div class="project">
-        <h3>MUSIC BAND <br><i>Progetto per BTB, band di musica soul and jazz. </i></h3>
-        <br>
-        <img src="immagini/btb.png" alt="logo 3"><br>
-        <h3><i>One-page web site</i></h3><br>
-
-        <video controls preload="metadata" poster="immagini/anteprima.png">
-            <source src="immagini/BTBvideo.mp4" type="video/mp4">
-         </video>   
-                 <br>
-        <br>
-
-      </div>
-  
-      <div class="project">
-        <h3>WEB APP - REMIND<br><i>Web App per un target di utenti over 65, sviluppata <br>in collaborazione con il progetto Sereni del laboratorio di <br> Human Interfaces in Information Systems (HIIS) del CNR di Pisa </i></h3><br>
-        <br>
-        </p>
-        <img src="immagini/remindLogo.png" alt="Logo 4">
-        <img src="immagini/remindContent.png" alt="WebApp" >
-      </div>
-     
-     
-     
-
-  </section>
-  <section id="freelance">
-  <h2>Illustrazioni freelance</h2>
-  <div class="projects">
-  <div class="project">
+  <!-- ABOUT -->
+  <section class="about" id="about">
+  <div class="about-container">
     
-    <img src="immagini/timBurton_Tavola disegno 1.png"  alt="Tim burton" >
-    <img src="immagini/Greta.png" alt="Greta illustrazione" >
-    <img src="immagini/Mattia_Moto_Tavola disegno 1.png" alt="Moto illustrazione" >    
-    <img src="immagini/SPOSI-01.png"  alt="sposi illustrazione" >
-    <img src="immagini/Mercoledì.png" alt="Mercoledì illustrazione" >
-    <img src="immagini/Amica_Vi.png" alt="Ragazza illustrazione" >
+    <div class="about-image reveal">
+      <img  src="immagini/photo.jpg" alt="Foto personale">
+    </div>
+
+    <div class="about-text reveal reveal-right">
+      <h2>
+        <span data-it="Chi sono" data-en="About me">Chi sono</span>
+      </h2>     
+      <p>
+        <span data-it=" Laureata in Informatica Umanistica – Grafica, Interattività e Ambienti Virtuali
+          presso l’Università di Pisa. Subito dopo la laurea, ho lavorato al CNR di Pisa su serious games,
+          interazione uomo–macchina e progetti di ricerca user-centered." data-en="I graduated in Humanistic Informatics – Graphics, Interactivity and Virtual Environments at the University of Pisa. 
+          Shortly after graduation, I worked at CNR Pisa on serious games, human–machine interaction and user-centered research projects.">
+          Laureata in Informatica Umanistica – Grafica, Interattività e Ambienti Virtuali
+          presso l’Università di Pisa. Subito dopo la laurea, ho lavorato al CNR di Pisa su serious games,
+          interazione uomo–macchina e progetti di ricerca user-centered.
+        </span>  
+      </p>
+      <p>
+        <span data-it=" Oltre al design e allo sviluppo frontend, mi occupo di fotografia, video
+          e montaggio video. Nel tempo libero mi dedico alla musica e attività creative(?)." data-en="Alongside design and frontend development, I also work with photography, video production and video editing. In my free time, I explore music and other creative activities.">
+          Oltre al design e allo sviluppo frontend, mi occupo di fotografia, video
+          e montaggio video. Nel tempo libero mi dedico alla musica e attività creative(?).
+        </span>
+      </p>
+    </div>
 
   </div>
-</div>
-</section >
-  <!-- Sezione Contatti -->
-  <section id="contact">
-    <h2>Contatti</h2>
+</section>
 
-    
-    <a href="mailto:benedetta.catricala@gmail.com"><i class="fa fa-envelope" style="font-size: 48px;"></i> 
 
-    <a href="https://www.linkedin.com/in/benedetta-catrical%C3%A0-259468227/"><i class="fa fa-linkedin-square" style="font-size:48px"></i></a>
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h2>
+        <span data-it="Progetti Selezionati" data-en="Selected Projects">Progetti Selezionati</span>
+      </h2>
+      <span data-it="In questa sezione ho raccolto alcuni dei miei lavori: dai siti web per il mondo della musica ai progetti 
+          di grafica vettoriale e branding. Mi piace sperimentare con strumenti diversi per trovare la soluzione visiva 
+          più adatta a ogni progetto." data-en="Here I collected some of my works: from websites in the music industry to vector graphics and branding projects. 
+          I enjoy experimenting with different tools to find the most suitable visual solution for each project.">
+        <p>
+          In questa sezione ho raccolto alcuni dei miei lavori: dai siti web per il mondo della musica ai progetti 
+          di grafica vettoriale e branding. Mi piace sperimentare con strumenti diversi per trovare la soluzione visiva 
+          più adatta a ogni progetto.
+        </p>
+      </span>
+
+      <div class="grid">
+        <article class="project-card reveal reveal-left">
+          <a href="remind.html">
+            <img src="immagini/remind.png" alt="REMIND web app">
+            <h3>REMIND</h3>
+            <p>UX case study · Web App · Serious Games</p>
+          </a>
+        </article>
+
+        <article class="project-card reveal reveal-right">
+          <a href="https://bcatricala.github.io/LorenzaCatricala/">
+          <img src="immagini/lorenza.png" alt="Lorenza landing page">
+          <h3>Landing Page</h3>
+          <p>
+            UI Design · Visual Branding · One-Page Site 
+          </p>
+          </a>
+        </article>
+
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2024 BC</p>
-  </footer>
+  <!-- VISUAL -->
+  <section id="visual" class="section visual reveal">
+    <div class="container">
+      <h2>Visual & Brand Identity</h2>
+
+
+      <div class="visual-grid reveal reveal-up">
+        <img src="immagini/moondance.jpg" alt="Illustrazione">
+        <img src="immagini/SPOSI-01.png" alt="Illustrazione sposi">
+        <img src="immagini/soulmates.jpg" alt="Illustrazione Mercoledì">
+        <img src="immagini/timBurton_Tavola disegno 1.png" alt="Tim Burton style">
+      </div>
+      
+    </div>
+  </section>
+
+  
+  <!-- CONTACTS -->
+<section id="contact" class="contact">
+  <div class="contact-container reveal">
+
+      <h2>
+        <span data-it="Contatti" data-en="Contact">Contatti</span>
+      </h2>    
+    <div class="contact-links">
+
+      <a href="mailto:benedetta.catricala@gmail.com" class="contact-btn email-link">
+        Email
+      </a>
+
+
+      <a href="https://www.linkedin.com/in/benedetta-catrical%C3%A0-259468227/" 
+         target="_blank" 
+         class="contact-btn outline">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="JS.js"></script>
 
 </body>
 </html>
